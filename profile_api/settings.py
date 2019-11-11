@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'user_api',
+    'user_api.apps.UserApiConfig',
     'rest_framework',
     'rest_framework.authtoken',
 ]
@@ -61,7 +61,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'profile_api.wsgi.application'
 
 
-# AUTH_USER_MODEL = 'user_api.UserProfile'
+AUTH_USER_MODEL = 'user_api.UserProfile'
 
 
 # Database
